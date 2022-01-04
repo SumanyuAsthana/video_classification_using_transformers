@@ -1,6 +1,7 @@
 # video_classification_using_transformers
 Made a model that relies on CNNs and transformers to classify videos
 This was a freelance job and the method can be explained as follows:
+
 DATA PREPROCESSING:
 We are getting videos that may or may not show suspicious activity of 13 classes such as abuse,vandalism,robbery etc.
 
