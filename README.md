@@ -15,8 +15,9 @@ We may choose to standardize or normalize the dataset as well.
 For each video we also have labels attached whether suspicious activity is there or not.
 
 Once our preprocessing is complete we feed the data into the model.
+There are two different types of models that I applied to deal with the problem.
 
-THE MODEL:
+MODEL 1:
 Our model is made up of two parallel submodels.
 Submodel1 :
 We have a deep CNN network consisting of various Conv2Ds and maxpoolings.
@@ -28,3 +29,6 @@ We get the extracted features from both the submodels and we concatenate them.
 This concatenation can be done through various methods: simple mathematical operations like summing or using convolutions or using attention.
 
 After concatenation we pass the resultant data into a fully connected network that classifies the data into the classes.
+
+MODEL 2:
+This model is made up of a simple pretrained DenseNet (which is a CNN based model) followed by a transformer encoder.
